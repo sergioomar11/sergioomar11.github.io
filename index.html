@@ -53,7 +53,6 @@
 
         .button {
             position: absolute;
-            display: block;
             width: 35px;
             height: 35px;
             background: transparent;
@@ -63,31 +62,39 @@
             font-size: 20px;
             font-weight: bold;
             user-select: none;
-            transition: background-color 0.3s ease;
         }
 
         /* Posiciona cada botón en la ubicación deseada */
         .button1 {
-            margin-bottom: 190px;
-            margin-left: 465px;
-            transform: translateX(-50%);
-            /* Centra el botón horizontalmente */
+            margin-bottom: 27vh;
+            margin-left: 37vh;
+
         }
 
         .button2 {
-            margin-bottom: 200px;
-            margin-right: 369px;
-            transform: translateX(-50%);
-            /* Centra el botón horizontalmente */
+            margin-bottom: 28vh;
+            margin-right: 33vh;
+
         }
 
-        @media (max-width: 680px) {
+        @media (max-width: 799px) {
             .invitacion {
                 margin-left: 1%;
             }
 
             .Imagen {
                 height: 75vh;
+            }
+
+            .button1 {
+                margin-bottom: 27vh;
+                margin-left: 51.5vh;
+            }
+
+            .button2 {
+                margin-bottom: 28vh;
+                margin-right: 33vh;
+
             }
         }
     </style>
@@ -96,6 +103,8 @@
         <div class="overlay ">
             <div>Quedan</div>
             <div id="countdown"></div>
+        </div>
+        <div class="overlay">
             <a href="https://maps.app.goo.gl/8fPuwerg3sSjmhDe6" target="_blank" class="button button1"></a>
             <a href="https://wa.me/+525539539452" target="_blank" class="button button2"></a>
         </div>
